@@ -49,7 +49,7 @@ app.use("/", dashboardRoutes);
 // });
 
 app.get("/", (req, res) => {
-  res.send("Welcome to the TODO app");
+  res.redirect("/auth/register");
 });
 
 const PORT = process.env.PORT || 3000;
